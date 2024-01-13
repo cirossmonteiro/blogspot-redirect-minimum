@@ -8,114 +8,81 @@
     <b:skin><![CDATA[]]></b:skin>
   </head>
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
+    <div id='root' style='height: 100vh;'/>
     <script>
       window.location = &quot;http://github.com&quot;;
     </script>
-    <div class='content'>
-      <div class='content-outer'>
-        <div class='fauxborder-left content-fauxborder-left'>
-          <div class='content-inner'>
-            <header>
-              <div class='header-outer'>
-                <div class='fauxborder-left header-fauxborder-left'>
-                  <div class='region-inner header-inner'>
-                    <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
-                      <b:widget id='Header1' locked='true' title='Contos de um autoindulgente (Cabeçalho)' type='Header' version='1'>
-                        <b:widget-settings>
-                          <b:widget-setting name='displayUrl'/>
-                          <b:widget-setting name='displayHeight'>0</b:widget-setting>
-                          <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
-                          <b:widget-setting name='useImage'>false</b:widget-setting>
-                          <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-                          <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
-                          <b:widget-setting name='displayWidth'>0</b:widget-setting>
-                        </b:widget-settings>
-                        <b:includable id='main'/>
-                        <b:includable id='description'/>
-                        <b:includable id='title'/>
-                      </b:widget>
-                    </b:section>
-                  </div>
-                </div>
-              </div>
-            </header>
-            <div class='main-outer'>
-              <div class='fauxborder-left main-fauxborder-left'>
-                <div class='region-inner main-inner'>
-                  <div class='columns fauxcolumns'>
-                    <div class='columns-inner'>
-                      <div class='column-center-outer'>
-                        <div class='column-center-inner'>
-                          <b:section class='main' id='main' name='Main' showaddelement='no'>
-                            <b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog' version='1'>
-                              <b:widget-settings>
-                                <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-                                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
-                                <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-                                <b:widget-setting name='showAuthor'>true</b:widget-setting>
-                                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
-                                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                                <b:widget-setting name='reactionsLabel'/>
-                                <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-                                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                                <b:widget-setting name='showLabels'>true</b:widget-setting>
-                                <b:widget-setting name='showLocation'>true</b:widget-setting>
-                                <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-                                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-                                <b:widget-setting name='showReactions'>false</b:widget-setting>
-                              </b:widget-settings>
-                              <b:includable id='main' var='top'/>
-                              <b:includable id='backlinkDeleteIcon' var='backlink'/>
-                              <b:includable id='backlinks' var='post'/>
-                              <b:includable id='comment-form' var='post'/>
-                              <b:includable id='commentDeleteIcon' var='comment'/>
-                              <b:includable id='comment_count_picker' var='post'/>
-                              <b:includable id='comment_picker' var='post'/>
-                              <b:includable id='comments' var='post'/>
-                              <b:includable id='feedLinks'/>
-                              <b:includable id='feedLinksBody' var='links'/>
-                              <b:includable id='iframe_comments' var='post'/>
-                              <b:includable id='mobile-index-post' var='post'/>
-                              <b:includable id='mobile-main' var='top'/>
-                              <b:includable id='mobile-nextprev'/>
-                              <b:includable id='mobile-post' var='post'/>
-                              <b:includable id='nextprev'/>
-                              <b:includable id='post' var='post'/>
-                              <b:includable id='postQuickEdit' var='post'/>
-                              <b:includable id='shareButtons' var='post'/>
-                              <b:includable id='status-message'/>
-                              <b:includable id='threaded-comment-form' var='post'/>
-                              <b:includable id='threaded_comment_js' var='post'/>
-                              <b:includable id='threaded_comments' var='post'/>
-                            </b:widget>
-                          </b:section>
-                        </div>
-                      </div>
-                      <div class='column-right-outer'>
-                        <div class='column-right-inner'>
-                          <aside>
-                            <macro:include id='main-column-right-sections' name='sections'>
-                              <macro:param default='2' name='num' value='1'/>
-                              <macro:param default='sidebar-right' name='idPrefix'/>
-                            </macro:include>
-                          </aside>
-                        </div>
-                      </div>
-                    </div>        
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
+      <b:widget id='Header1' locked='true' title='Contos de um autoindulgente (Cabeçalho)' type='Header' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='displayUrl'/>
+          <b:widget-setting name='displayHeight'>0</b:widget-setting>
+          <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+          <b:widget-setting name='useImage'>false</b:widget-setting>
+          <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+          <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+          <b:widget-setting name='displayWidth'>0</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'/>
+        <b:includable id='description'/>
+        <b:includable id='title'/>
+      </b:widget>
+    </b:section>
+    <b:section class='main' id='main' name='Main' showaddelement='no'>
+      <b:widget id='Blog1' locked='true' title='Postagens no blog' type='Blog' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+          <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+          <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+          <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='showAuthor'>true</b:widget-setting>
+          <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+          <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='reactionsLabel'/>
+          <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+          <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+          <b:widget-setting name='showLabels'>true</b:widget-setting>
+          <b:widget-setting name='showLocation'>true</b:widget-setting>
+          <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+          <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+          <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+          <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+          <b:widget-setting name='showReactions'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main' var='top'/>
+        <b:includable id='backlinkDeleteIcon' var='backlink'/>
+        <b:includable id='backlinks' var='post'/>
+        <b:includable id='comment-form' var='post'/>
+        <b:includable id='commentDeleteIcon' var='comment'/>
+        <b:includable id='comment_count_picker' var='post'/>
+        <b:includable id='comment_picker' var='post'/>
+        <b:includable id='comments' var='post'/>
+        <b:includable id='feedLinks'/>
+        <b:includable id='feedLinksBody' var='links'/>
+        <b:includable id='iframe_comments' var='post'/>
+        <b:includable id='mobile-index-post' var='post'/>
+        <b:includable id='mobile-main' var='top'/>
+        <b:includable id='mobile-nextprev'/>
+        <b:includable id='mobile-post' var='post'/>
+        <b:includable id='nextprev'/>
+        <b:includable id='post' var='post'/>
+        <b:includable id='postQuickEdit' var='post'/>
+        <b:includable id='shareButtons' var='post'/>
+        <b:includable id='status-message'/>
+        <b:includable id='threaded-comment-form' var='post'/>
+        <b:includable id='threaded_comment_js' var='post'/>
+        <b:includable id='threaded_comments' var='post'/>
+      </b:widget>
+    </b:section>
+    <aside>
+      <macro:include id='main-column-right-sections' name='sections'>
+        <macro:param default='2' name='num' value='1'/>
+        <macro:param default='sidebar-right' name='idPrefix'/>
+      </macro:include>
+    </aside>
   </body>
 
   <macro:includable id='sections' var='col'>
