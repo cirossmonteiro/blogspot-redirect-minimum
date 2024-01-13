@@ -1,0 +1,1 @@
+# blogspot-redirect-minimum
